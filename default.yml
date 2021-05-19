@@ -1,0 +1,28 @@
+---
+# Reference: https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
+require:
+  - rubocop-faker
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'lib/tasks/*'
+    - 'Rakefile'
+    - '*.gemspec'
+    - '**/node_modules/**/*'
+    - 'vendor/**/*'
+
+Style/MetricsBlockLength:
+  Exclude:
+    - "config/environments/development.rb"
+    - "config/environments/production.rb"
+    - "config/environments/test.rb"
+
+Style/Documentation:
+  Exclude:
+    - "config/application.rb"
