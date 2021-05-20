@@ -17,12 +17,20 @@ AllCops:
     - '**/node_modules/**/*'
     - 'vendor/**/*'
 
-Style/MetricsBlockLength:
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
   Exclude:
-    - "config/environments/development.rb"
-    - "config/environments/production.rb"
-    - "config/environments/test.rb"
+    - config/environments/development.rb
+    - config/environments/production.rb
+    - config/environments/test.rb
+
+Metrics/MethodLength:
+  Enabled: false
 
 Style/Documentation:
   Exclude:
-    - "config/application.rb"
+    - config/application.rb
+    - app/controllers/application_controller.rb
+    - app/models/application_record.rb
