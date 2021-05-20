@@ -2,17 +2,20 @@
 
 This is an opinionated rubocp configuration.
 
-- Prefer the rubocop/ruby style guide community defaults
+- Prefer most of the rubocop/ruby style guide community defaults
 - Enable performance, rails, rspec, faker, rake
 - Disable things that we'd find in a default rails app that we don't need
-  (comments on `config/application.rb`)
+  (comments on `config/application.rb` for example)
+- Allow or expect comments on other things; models, controllers, etc.
 
 ## Usage
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'nonstandard', require: false
+group :development do
+  gem 'nonstandard', require: false
+end
 ```
 
 Add this to your project `.rubocop.yml` file

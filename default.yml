@@ -17,6 +17,10 @@ AllCops:
     - '**/node_modules/**/*'
     - 'vendor/**/*'
 
+Layout/LineLength:
+  Exclude:
+    - config/routes.rb
+
 Metrics/AbcSize:
   Enabled: false
 
@@ -25,12 +29,17 @@ Metrics/BlockLength:
     - config/environments/development.rb
     - config/environments/production.rb
     - config/environments/test.rb
+    - config/routes.rb
 
 Metrics/MethodLength:
   Enabled: false
 
 Style/Documentation:
   Exclude:
-    - config/application.rb
+    - app/controllers/**/*
     - app/controllers/application_controller.rb
+    - app/helpers/application_helper.rb
     - app/models/application_record.rb
+    - config/application.rb
+    - spec/**/*
+    - test/**/*
