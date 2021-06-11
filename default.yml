@@ -25,11 +25,7 @@ Metrics/AbcSize:
   Enabled: false
 
 Metrics/BlockLength:
-  Exclude:
-    - config/environments/development.rb
-    - config/environments/production.rb
-    - config/environments/test.rb
-    - config/routes.rb
+  Enabled: false
 
 Metrics/MethodLength:
   Enabled: false
@@ -37,7 +33,6 @@ Metrics/MethodLength:
 Style/Documentation:
   Exclude:
     - app/controllers/**/*
-    - app/controllers/application_controller.rb
     - app/helpers/application_helper.rb
     - app/models/application_record.rb
     - config/application.rb
