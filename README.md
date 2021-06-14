@@ -21,8 +21,12 @@ end
 Add this to your project `.rubocop.yml` file
 
 ```ruby
+# Include one or more of the configurations below
 inherit_gem:
-  nonstandard: default.yml
+  nonstandard:
+    - ruby.yml # Vanilla ruby/rubocop/performance
+    - rails.yml # Rails
+    - rswag.yml # RSpec/rswag integration
 ```
 
 And then execute:
