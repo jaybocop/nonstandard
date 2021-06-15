@@ -1,9 +1,6 @@
 # CHANGELOG
 
 ## main (unreleased)
-- Work in Progress
-
-## 0.2.0 (2021-06-14)
 - Split rules into ruby/rails/rswag(rspec) rules
 
 ## 0.1.2 (2021-06-11)
