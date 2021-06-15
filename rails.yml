@@ -1,19 +1,18 @@
 ---
-# Reference: https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
+# https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
 require:
-  - rubocop-faker
-  - rubocop-performance
   - rubocop-rails
-  - rubocop-rake
-  - rubocop-rspec
+
+inherit_mode:
+  merge:
+    - Exclude
 
 AllCops:
+  NewCops: enable
   Exclude:
     - 'bin/**/*'
     - 'db/**/*'
     - 'lib/tasks/*'
-    - 'Rakefile'
-    - '*.gemspec'
     - '**/node_modules/**/*'
     - 'vendor/**/*'
 
@@ -24,17 +23,9 @@ Layout/LineLength:
 Metrics/AbcSize:
   Enabled: false
 
-Metrics/BlockLength:
-  Enabled: false
-
-Metrics/MethodLength:
-  Enabled: false
-
 Style/Documentation:
   Exclude:
     - app/controllers/**/*
     - app/helpers/application_helper.rb
     - app/models/application_record.rb
     - config/application.rb
-    - spec/**/*
-    - test/**/*

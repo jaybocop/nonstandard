@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## main (unreleased)
-- Work in Progress
+- Split rules into ruby/rails/rswag(rspec) rules
 
 ## 0.1.2 (2021-06-11)
 - Improvement: Disable AbcSize/BlockLength/MethodLength

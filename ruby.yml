@@ -1,0 +1,24 @@
+---
+# https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
+require:
+  - rubocop-performance
+  - rubocop-rake
+
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'Rakefile'
+    - '*.gemspec'
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
