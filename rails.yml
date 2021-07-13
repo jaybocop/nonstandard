@@ -10,8 +10,6 @@ inherit_mode:
 AllCops:
   NewCops: enable
   Exclude:
-    - 'bin/**/*'
-    - 'db/**/*'
     - 'lib/tasks/*'
     - '**/node_modules/**/*'
     - 'vendor/**/*'
@@ -19,6 +17,8 @@ AllCops:
 Layout/LineLength:
   Exclude:
     - config/routes.rb
+  IgnoredPatterns:
+    - ['\A#  ']
 
 Metrics/AbcSize:
   Enabled: false
