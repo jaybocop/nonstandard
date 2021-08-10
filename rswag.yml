@@ -22,6 +22,7 @@ RSpec/VariableName:
   IgnoredPatterns:
     - ^Authorization
     - .*\[\]
+    - .*\[(.*)?\]
 
 Style/Documentation:
   Exclude:
