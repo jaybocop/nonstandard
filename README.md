@@ -60,11 +60,13 @@ If you have access to publish the gem on rubygems:
 1. `bundle` if any dependencies  have changed
 1. Commit all changes
 1. Update the `CHANGELOG.md`
-1. Publish to rubygems:
-  1. `rake build`
-  1. `cd pkg`
-  1. `gem push nonstandard.<version_number>.gem`
+1. Publish to rubygems
 
+Publishing to rubygems:
+
+1. `rake build`
+1. `cd pkg`
+1. `gem push nonstandard.<version_number>.gem`
 
 ## Contributing
 

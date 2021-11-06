@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## main (unreleased)
+
+## 0.1.3 (2021-11-06)
 - Split rules into ruby/rails/rswag(rspec) rules
 - Add exclusion for annotate_models comments
 - Add exclusion for spec variables ending with []
