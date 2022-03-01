@@ -17,6 +17,7 @@ AllCops:
 Layout/LineLength:
   Exclude:
     - config/routes.rb
+    - config/initializers/devise.rb
   IgnoredPatterns:
     - '\A#  '
 
@@ -29,3 +30,8 @@ Style/Documentation:
     - app/helpers/application_helper.rb
     - app/models/application_record.rb
     - config/application.rb
+    - db/migrate/**/*
+
+Style/NumericLiterals:
+  Exclude:
+    - config/initializers/strong_migrations.rb
