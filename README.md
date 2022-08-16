@@ -58,9 +58,10 @@ If you have access to publish the gem on rubygems:
 
 1. Update the `version.rb` file as appropriate
 1. `bundle` if any dependencies  have changed
-1. Commit all changes
 1. Update the `CHANGELOG.md`
-1. Tag the release
+1. Commit all changes & push to repo
+1. Merge version branch into main
+1. Tag the release on main
 1. Publish to rubygems
 
 Tagging the release:
