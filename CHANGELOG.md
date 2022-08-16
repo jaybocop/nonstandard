@@ -2,6 +2,9 @@
 
 ## main (unreleased)
 
+## 0.1.4 (2022-08-16)
+- Update Layout/LineLength language for AllowedPatterns
+
 ## 0.1.3 (2021-11-06)
 - Split rules into ruby/rails/rswag(rspec) rules
 - Add exclusion for annotate_models comments
