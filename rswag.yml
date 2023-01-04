@@ -19,7 +19,7 @@ RSpec/EmptyExampleGroup:
     - spec/requests/**/*
 
 RSpec/VariableName:
-  IgnoredPatterns:
+  AllowedPatterns:
     - ^Authorization
     - .*\[\]
     - .*\[(.*)?\]
